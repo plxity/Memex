@@ -96,7 +96,9 @@ class TooltipContainer extends React.Component {
                 'annotation_created',
             )
             // Remove active notification
-            document.querySelector('.memex-tooltip-notification').remove()
+            if (document.querySelector('.memex-tooltip-notification')) {
+                document.querySelector('.memex-tooltip-notification').remove()
+            }
         }
 
         // quick hack, to prevent the tooltip from popping again

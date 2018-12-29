@@ -36,11 +36,12 @@ export class ToolbarNotification extends Component<Props> {
             // Styles tailored for onboarding notification
             const { x, y } = position
             positionStyles = {
-                left: x - 200,
+                left: x - 150,
                 top: y + 100,
                 height: 'auto',
-                width: '450px',
-                paddingTop: '15px',
+                paddingLeft: '15px',
+                width: '350px',
+                paddingTop: '20px',
                 position: 'absolute',
             }
         }
